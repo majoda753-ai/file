@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 1000px;
+            height: 700px;
+            padding: 30px;
+            border: 3px solid rgb(250, 82, 82);
+            position: relative;
+        
+        }
+        .nav{
+            background-color: rgb(222, 73, 73);
+            color: white;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin: auto;
+            gap: 10px;
+            max-width: 900px;
+            background-color: white;
+
+        }
+        .box1{
+            float: right;
+            
+        }
+
+        .box3{
+            background-color: rgb(238, 204, 204);
+            color: rgb(233, 79, 79);
+        }
+        .ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            width: 150px;
+            gap: 5px;
+           margin-left: 40px;
+
+        }
+        .ul li{
+            border: 1px solid;
+            border-radius: 8px;
+           color: white; 
+           background-color: rgb(245, 89, 89);
+           padding: 4px 7px;
+           margin: 10px;
+        }
+        .ul li :hover{
+            background-color: whitesmoke;
+        }
+
+        footer{
+            color: white;
+            background-color: rgb(231, 102, 102);
+            padding: 8px;
+        }
+
+        header{
+            color: white;
+            background-color: rgb(222, 73, 73);
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header>
+     <div class="nav">
+        <h1>Welcome to My Homepage</h1>
+
+        <p>Use the menu to select different Stylesheets</p>
+     </div>
+    </header>
+
+    <div class="content">
+        <div class="box1">
+        <ul class="ul">
+             <li><a href="Stylesheet1.html">Stylesheet1,</a></li>
+             <li><a href="Stylesheet2.html">Stylesheet2,</a></li>
+             <li> <a href="Stylesheet3.html">stylesheet3,</a></li>
+             <li><a href="Stylesheet4.html">stylesheet4.</a></li>
+             <li><a href="nostyle.html">No Stylesheet.</a></li>
+        </ul>
+        </div>
+
+        <div class="box2">
+        <h1>Same Page Different Stylesheets</h1>
+        <p>This is demonstration of how different stylesheet
+            can change the layout of your HTML page. You can change the
+            layout of this page by selecting <br>different stylesheets in the menu, 
+            or by selecting one of the following links:</p>
+            <a href="Stylesheet1.html">Stylesheet1,</a>
+            <a href="Stylesheet2.html">Stylesheet2,</a>
+             <a href="Stylesheet3.html">stylesheet3,</a>
+            <a href="Stylesheet4.html">stylesheet4.</a><br>   
+
+
+        <h2>No Styles</h2>
+        <p>This page uses DIV elements to group different
+            sections of the HTML page.
+            Click here to see how the page looks like with no stylesheet:
+        </p>
+        <a href="NoStylesheet.html">No Stylesheet.</a>
+        </div>
+    </div>
+
+        <div class="box3">
+        <h3>Side-Bar</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Sit, tempore cumque autem quia consequatur nam obcaecati
+              id doloribus explicabo nulla repudiandae commodi, in quod,
+               officiis excepturi rerum deserunt repellendus. Nisi?</p>
+        </div>
+            <footer>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Vero ducimus dignissimos eveniet eligendi nam. Nam tempore 
+                dolorum ut saepe. Nulla commodi est id nostrum eaque 
+                praesentium magni animi sapiente.</p>
+                </footer>
+                
+
+                <script>
+
+    const boxes = document.querySelectorAll(".ul li");
+
+    boxes.forEach(function(box) {
+
+        box.addEventListener("click", function(){
+            const link = box.querySelector("a");
+
+            window.location.href = link.href;
+
+        });
+
+    });
+
+
+</script>
+
+</body>
+</html>
+       

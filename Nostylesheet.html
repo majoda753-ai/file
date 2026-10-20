@@ -1,0 +1,79 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1>Welcome to My Homepage</h1>
+
+    <p>Use the menu to select different Stylesheets</p>
+    <ul>
+        <li>Stylesheet 1</li>
+        <li>Stylesheet 2 </li>
+        <li>Stylesheet 3 </li>
+        <li>Stylesheet 4 </li>
+        <li>No Stylesheet</li>
+    </ul>
+
+    <h1>Same Page Different Stylesheets</h1>
+    <p>This is demonstration of how different stylesheet
+         can change the layout of your HTML page. You can change the
+          layout of this page by selecting <br>different stylesheets in the menu, 
+        or by selecting one of the following links:</p>
+        <a href="Stylesheet1.html">Stylesheet1,</a>
+        <a href="Stylesheet2.html">Stylesheet2,</a>
+        <a href="Stylesheet3.html">stylesheet3,</a>
+        <a href="Stylesheet4.html">stylesheet4.</a><br>
+
+        <h2>No Styles</h2>
+        <p>This page uses DIV elements to group different
+            sections of the HTML page.
+            Click here to see how the page looks like with no stylesheet:
+        </p>
+        <a href="NoStylesheet.html">No Stylesheet.</a>
+
+        <h3>Side-Bar</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Sit, tempore cumque autem quia consequatur nam obcaecati
+              id doloribus explicabo nulla repudiandae commodi, in quod,
+               officiis excepturi rerum deserunt repellendus. Nisi?</p><br>
+
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Vero ducimus dignissimos eveniet eligendi nam. Nam tempore 
+                dolorum ut saepe. Nulla commodi est id nostrum eaque 
+                praesentium magni animi
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Placeat reprehenderit magnam numquam mollitia natus cumque alias 
+            consequuntur minus et, saepe at veniam, libero dolores, 
+            rem doloremque quia nisi optio perspiciatis? </p>
+
+    
+
+
+            <script>
+
+    // Get all stylesheet boxes
+    const boxes = document.querySelectorAll(".ul li");
+
+    // Add click event to each box
+    boxes.forEach(function(box) {
+
+        box.addEventListener("click", function() {
+
+            // Find the link inside the box
+            const link = box.querySelector("a");
+
+            // Open the page
+            window.location.href = link.href;
+
+        });
+
+    });
+    
+</script>
+
+       </body>
+        </html

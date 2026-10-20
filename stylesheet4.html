@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+
+body {
+    width: 850px;
+    margin: 30px auto;
+    padding: 35px;
+
+    background-color: black;
+    color: #7ac943;
+
+    font-family: "Courier New", monospace;
+}
+
+
+header {
+    background-color: black;
+    color: #7ac943;
+}
+
+.nav {
+    background-color: black;
+    color: #7ac943;
+}
+
+.nav h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.nav p {
+    margin-top: 0;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    background-color: black;
+}
+
+.box1 {
+    order: 1;
+}
+
+.ul {
+    list-style-type: none;
+
+    padding: 0;
+    margin: 20px 0;
+}
+
+.ul li {
+    margin: 12px 0;
+}
+
+.ul li a {
+    color: #7ac943;
+    text-decoration: none;
+}
+
+.ul li a:hover {
+    color: white;
+}
+
+
+.box2 {
+    order: 2;
+}
+
+.box2 h1 {
+    color: #7ac943;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.box2 h2 {
+    color: #7ac943;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.box2 p {
+    color: #7ac943;
+
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+
+
+.box2 a {
+    color: white;
+}
+
+.box2 a:hover {
+    color: #7ac943;
+}
+
+.box3 {
+    background-color: black;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.box3 h3 {
+    color: white;
+}
+
+.box3 p {
+    color: white;
+    line-height: 1.8;
+}
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    padding: 12px;
+    margin-top: 10px;
+}
+
+footer p {
+    color: white;
+    line-height: 1.8;
+}
+    </style>
+     </head>
+
+     <body>
+    <div >
+       <div class="nav">
+         <h1>Welcome to My Homepage</h1>
+
+         <p>Use the menu to select different Stylesheets</p>
+      </div>
+      <div class="container">
+      <div class="box1">
+         <ul class="box">
+           <li>Stylesheet 1</li>
+           <li>Stylesheet 2</li>
+           <li>Stylesheet 3</li>
+           <li>Stylesheet 4</li>
+           <li>No Stylesheet</li>
+         </ul>
+     </div>
+
+     <div class="box2">
+     <h1>Same Page Different Stylesheets</h1>
+       <p>This is demonstration of how different stylesheet
+         can change the layout of your HTML page. You can change the
+          layout of this page by selecting <br>different stylesheets in the menu, 
+         or by selecting one of the following links:</p>
+         <a href="Stylesheet1.html">Stylesheet1,</a>
+         <a href="Stylesheet2.html">Stylesheet2,</a>
+         <a href="Stylesheet3.html">stylesheet3,</a>
+         <a href="Stylesheet4.html">stylesheet4.</a><br>
+         <h2>No Styles</h2>
+        <p>This page uses DIV elements to group different
+            sections of the HTML page.
+            Click here to see how the page looks like with no stylesheet:
+        </p>
+        <a href="NoStylesheet.html">No Stylesheet.</a>
+      </div>
+
+      <div class="box3">
+       <h3>Side-Bar</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Sit, tempore cumque autem quia consequatur nam obcaecati
+              id doloribus explicabo nulla repudiandae commodi, in quod,
+               officiis excepturi rerum deserunt repellendus. Nisi?</p>
+        </div>
+        </div>
+        <div class="box4">        
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Vero ducimus dignissimos eveniet eligendi nam. Nam tempore 
+                dolorum ut saepe. Nulla commodi est id nostrum eaque 
+                praesentium magni animi sapiente.</p>
+        </div>        
+ </div>
+
+ <script>
+
+
+    const boxes = document.querySelectorAll(".ul li");
+
+    boxes.forEach(function(box) {
+
+        box.addEventListener("click", function() {
+
+        
+            const link = box.querySelector("a");
+
+        
+            window.location.href = link.href;
+
+        });
+
+    });
+
+</script>
+</body>
+</html>
